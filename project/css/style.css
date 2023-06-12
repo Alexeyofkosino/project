@@ -1,0 +1,357 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+@font-face {
+    font-family: 'Cyrillic';
+    src: url('../fonts/CyrillicOld.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+
+}
+@font-face {
+    font-family: 'Kramola';
+    src: url('../fonts/Kramola.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+
+/* global reset */
+html, body, body div, div, span, h1, h2, h3, h4, h5, h6, p, a, em, img, small, strike, strong, sub, sup, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, aside, section, article, header, footer, main, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+}
+ol, ul, li {
+    list-style: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+input, textarea {
+    font: inherit;
+    box-sizing: border-box;
+}
+
+/* main */
+html {
+    height: 100%;
+}
+body {
+    background: url('../img/fon2.jpg');
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'icomoon', Arial;
+}
+header {
+    flex: none;
+    
+}
+main {
+    flex: 1 1 auto;
+}
+footer {
+    flex: none;
+    background: #777;
+}
+.container {
+    margin: 0 auto;
+    padding: 1px;
+    width: 1280px;
+}
+button {
+    font-family: 'icomoon', Arial;
+    cursor: pointer;
+}
+nav a {
+    flex: none;
+    text-decoration: none;
+}
+nav .current {
+    font-weight: bold;
+    cursor: default;
+}
+h1 {
+    font-size: 48px;
+    margin-bottom: 24px;
+    padding-right: 56px;
+}
+
+
+/* header */
+.lable {
+    font-family: 'Kramola';
+    font-size: 35px; 
+}
+
+.navbar-brand {
+    margin-right: 5rem
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: #111;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.navbar-nav .dropdown-menu {
+	right: 0;
+	left: auto;
+}
+
+.top-menu li a::after {
+	content: '';
+	display: block;
+	width: 100%;
+	background-color: #111;
+	height: 1px;
+	transition: all .3s;
+	transform: scale(0);
+}
+
+.top-menu li a:hover::after {
+	transform: scale(1);
+}
+
+.modal-body img {
+	max-width: 100px;
+}
+
+/* Footer */
+.footer {
+	background-color: #343434;
+    padding: 20px;
+}
+
+.footer h4 {
+	color: #ccc;
+	text-transform: uppercase;
+	font-size: 16px;
+	border-bottom: 1px solid #666;
+	padding-bottom: 3px;
+}
+
+.footer a {
+	text-decoration: none;
+	transition: all .3s;
+}
+
+.footer a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+.footer a, .footer li {
+	color: #c8c8c8;
+}
+
+.footer li a {
+	display: block;
+}
+
+.footer-icons a {
+	display: inline-block;
+	margin-right: 15px;
+	font-size: 20px;
+}
+/* Footer */
+
+/* Carousel */
+.my-carousel {
+	padding: 0;
+}
+
+.my-carousel .carousel-item {
+	display: flex;
+	max-height: 700px;
+}
+
+.my-carousel .carousel-item img {
+	object-fit: cover;
+}
+/* Carousel */
+
+/* action & timer */
+
+.action {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 1px;
+	height: 155px;
+    color: rgb(0, 46, 102);
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    opacity: 1;
+}
+.text {
+    display: block;
+    font-size: 24px;
+    color: red;
+    text-align: center;
+}
+
+.actiontext {
+	text-align: center;
+    font-size: 24px;
+    line-height: 48px;
+    height: 48px;
+}
+.actiontimer {
+    vertical-align: baseline;
+    height: 48px;
+}
+.actiontimer span {
+    vertical-align: baseline;
+    text-align: left;
+    width: 100px;
+}
+.actiontimer b {
+    vertical-align: baseline;
+    text-align: right;
+    width: 45px;
+    font-size: 40px;
+    margin: 0 8px;
+}
+.actiontimer b:first-child {
+    width: auto;
+}
+
+/* content*/
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.cont {
+    width: 408px;
+    height: 850px;
+    margin: 40px;
+    color: #111;
+    text-align: center;
+    border-width: 4px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #3f3f45, #f0e9f3) 1;
+}
+
+
+/* modals */
+.screener {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(100, 100, 100, .75);
+}
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 10px;
+    padding: 40px;
+    display: block;
+    width: auto;
+    height: auto;
+}
+.modal .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    color: red;
+    font-size: 40px;
+    line-height: 40px;
+    box-shadow: 0 0 5px rgba(0,0,0,.25);
+}
+.modal .close:active {
+    box-shadow: inset 0 0 5px rgba(0,0,0,.25);
+}
+
+/* lightbox */
+#lightbox img {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 2s;
+}
+#lightbox.ready img {
+    opacity: 1;
+}
+
+
+
+
+/* adaptivity */
+@media screen and (max-width:1219px) {
+    .container {
+        width: 968px;
+    }
+    .catalog_content {
+        grid-template-columns: repeat(3, 200px);
+        gap: 30px;
+    }
+}
+
+
+
+@media screen and (max-width:1019px) {
+    .container {
+        width: 738px;
+    }
+    .catalog_content {
+        grid-template-columns: repeat(2, 200px);
+    }
+}
+
+
+
+@media screen and (max-width:919px) {
+    .container {
+        width: 700px;
+    }
+    .actiontext {
+        font-size: 16px;
+        line-height: 32px;
+        height: 32px;
+    }
+    .actiontimer {
+        height: 32px;
+    }
+    .actiontimer span {
+        width: 70px;
+    }
+    .actiontimer b {
+        width: 30px;
+        font-size: 24px;
+    }
+    .catalog aside {
+        float: left;
+        width: 264px;
+    }
+    .catalog article {
+        margin-left: 280px;
+    }
+    .catalog_content {
+        gap: 20px;
+    }
+}
+
+
